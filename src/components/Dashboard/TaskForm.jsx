@@ -37,7 +37,7 @@ const TaskForm = ({ handleCloseModal, onTaskAdded, task = null }) => {
       if (task) {
         
         const response = await axios.put(
-          `http://localhost:5000/api/tasks/${task._id}`,
+          `https://taskmanager-backend-ou5n.onrender.com/api/tasks/${task._id}`,
           { title, description },
           { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -46,7 +46,7 @@ const TaskForm = ({ handleCloseModal, onTaskAdded, task = null }) => {
       } else {
         
         const response = await axios.post(
-          "http://localhost:5000/api/tasks",
+          "https://taskmanager-backend-ou5n.onrender.com/api/tasks",
           { title, description },
           { headers: { Authorization: `Bearer ${token}` } }
         );
