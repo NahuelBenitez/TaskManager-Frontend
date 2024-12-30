@@ -45,16 +45,13 @@ Este es el frontend para la aplicación "Coally Task Manager", una herramienta p
 -  **react-icons**: Íconos para la interfaz de usuario.
 
 -  **Tailwind CSS**: Framework CSS para un diseño responsivo y personalizado.
-
   
 
 ## Estructura del proyecto
-
   
 
 La estructura del proyecto dentro de la carpeta `src` es la siguiente:
 
-  
   
 
 ### Detalle de carpetas
