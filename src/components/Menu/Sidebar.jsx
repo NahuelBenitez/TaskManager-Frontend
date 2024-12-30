@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { HiChartPie, HiUser } from "react-icons/hi";
 import { ImExit } from "react-icons/im";
-import { FaBars } from "react-icons/fa"; // Icono para el menú hamburguesa
+import { FaBars } from "react-icons/fa"; 
 
 const Sidebar = () => {
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState(false); // Para manejar la apertura del menú en pantallas pequeñas
+  const [isOpen, setIsOpen] = useState(false); 
 
   const handleLogout = () => {
     localStorage.removeItem("token");

@@ -29,7 +29,6 @@ const Modal = ({ onTaskAdded }) => {
           >
             <h2 className="text-2xl font-bold mb-4">Agregar una nueva tarea</h2>
 
-            {/* Pasamos handleOpen como prop a TaskForm */}
             <TaskForm handleCloseModal={handleOpen} onTaskAdded={onTaskAdded} />
           </div>
         </div>

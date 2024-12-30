@@ -9,7 +9,7 @@ const TaskList = () => {
   const { tasks, deleteTask, toggleCompleted, setTaskForEdit, loading } = useTasks();
   const [filter, setFilter] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
-  const [sortOrder, setSortOrder] = useState('asc'); // Estado para el orden
+  const [sortOrder, setSortOrder] = useState('asc'); 
 
 
   const filteredTasks = tasks
@@ -23,9 +23,9 @@ const TaskList = () => {
     })
     .sort((a, b) => {
       if (sortOrder === 'asc') {
-        return a.title.localeCompare(b.title); // Orden ascendente
+        return a.title.localeCompare(b.title); 
       } else {
-        return b.title.localeCompare(a.title); // Orden descendente
+        return b.title.localeCompare(a.title); 
       }
     });
 

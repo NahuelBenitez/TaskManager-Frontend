@@ -6,7 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { toast } from "react-toastify";
 
-// Esquema para validar título y descripción
+
 const taskSchema = z.object({
   title: z
     .string()
@@ -35,16 +35,16 @@ const TaskForm = ({ handleCloseModal, onTaskAdded, task = null }) => {
 
     try {
       if (task) {
-        // Modo edición
+        
         const response = await axios.put(
           `http://localhost:5000/api/tasks/${task._id}`,
           { title, description },
           { headers: { Authorization: `Bearer ${token}` } }
         );
-        updateTask(response.data); // Actualiza la tarea en el contexto
+        updateTask(response.data); 
         toast.success("Tarea actualizada con éxito!");
       } else {
-        // Modo creación
+        
         const response = await axios.post(
           "http://localhost:5000/api/tasks",
           { title, description },

@@ -18,18 +18,16 @@ const registerSchema = z.object({
 const RegisterPage = () => {
   const navigate = useNavigate();
 
-  // Configuración de react-hook-form con zodResolver
+  
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: zodResolver(registerSchema),
   });
 
-  // Función para manejar el registro
   const handleRegister = async (data) => {
-    try {
-      // Enviar los datos al backend para crear el usuario
+    try {      
       const response = await axios.post('http://localhost:5000/api/auth/register', data);
-      alert(response.data.message); // Mostrar el mensaje de éxito
-      navigate('/login'); // Redirigir al login después del registro
+      alert(response.data.message); 
+      navigate('/login'); 
     } catch (err) {
       console.error(err);
       alert('Error al registrar el usuario');

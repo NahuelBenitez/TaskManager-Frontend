@@ -25,16 +25,12 @@ const Dashboard = () => {
 
   return (
     <div className="flex">
-      
       <Sidebar />
-      
       <div className="lg:ml-64 ml-0 w-full p-6 transition-all duration-300">
         <div className="flex items-center justify-center space-x-2 mb-6">
           <MdTask className="text-2xl text-blue-500" />
           <h2 className="text-2xl font-semibold">Task Manager</h2>
         </div>
-
-      
         <TaskList />
       </div>
     </div>
