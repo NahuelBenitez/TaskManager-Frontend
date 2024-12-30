@@ -25,7 +25,7 @@ const RegisterPage = () => {
 
   const handleRegister = async (data) => {
     try {      
-      const response = await axios.post('http://localhost:5000/api/auth/register', data);
+      const response = await axios.post('https://taskmanager-backend-ou5n.onrender.com/api/auth/register', data);
       alert(response.data.message); 
       navigate('/login'); 
     } catch (err) {

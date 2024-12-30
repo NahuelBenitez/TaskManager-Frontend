@@ -13,7 +13,7 @@ export const TaskProvider = ({ children }) => {
   const [taskToEdit, setTaskToEdit] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const apiUrl = import.meta.env.VITE_API_URL;
+  const apiUrl = "https://taskmanager-backend-ou5n.onrender.com/api"
 
   useEffect(() => {
     const fetchTasks = async () => {
