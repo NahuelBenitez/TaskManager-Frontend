@@ -24,6 +24,11 @@ Currently, two official plugins are available:
 
 Este es el frontend para la aplicación "Coally Task Manager", una herramienta para la gestión de tareas. El proyecto está desarrollado con React y tiene una estructura organizada utilizando Tailwind CSS para el diseño, con funcionalidades de gestión de tareas como creación, edición, eliminación y filtrado de tareas.
 
+## Link
+https://taskmanagercoally.netlify.app/
+
+El deploy se realizo con netlify
+https://www.netlify.com/
   
 
 ## Tecnologías utilizadas
